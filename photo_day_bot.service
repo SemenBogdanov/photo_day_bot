@@ -1,0 +1,15 @@
+[Unit]
+Description=Telegram bot 'Photo_day_bot'
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=semen106
+WorkingDirectory=/home/semen106/bot/photo_day_bot/photo_day_bot/
+ExecStart=/usr/bin/python3 /home/semen106/bot/photo_day_bot/photo_day_bot/main.py
+RestartSec=20
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
