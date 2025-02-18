@@ -9,7 +9,7 @@ import asyncio
 import time
 
 config = configparser.ConfigParser()
-config.read('/abc/py_conf/my_global_config.cfg')
+config.read('/home/semen106/abc/py_conf/global_config.cfg')
 
 # For test
 # config.read(r'C:\PYTHON_CONFIG\global_config.cfg')
